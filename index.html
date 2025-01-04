@@ -1,41 +1,71 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
+
 
 <head>
-
-    <title>
-    e
-    </title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/e.css"> 
-</head>
-
-<body>
-     <p class="p1">
-     <strong> <u>HELLO</u> WORLD ! </strong>
-    </p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-     <button class="b1">
-      e
-     </button>
-  
-     <a href="https://www.neom.com/en-us" target="blank">
-     neom
-     </a>
-     
-     <div>
-        <img src="myimg.png" class="myimg1">
-        <p class="pimg1">
-            elham alswian
-        </p>
-        <img src="myimg.png" class="myimg">
-     </div>
+<link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- include css file -->
+<meta charset="UTF-8">       <!--encoding-->     <!--  to use HTML Symbols   -->
+    
+    <style>
+        body {
+            font-size: 10px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: inline-block;
+            
+        }
+        .sidebar {
+            width: 80px;
+            background-color: #d8ccdb;
+            color: #050202;
+            height: 100vh;
+            padding: 15px;
+            display: inline-block;
+            
+            
+        }
+        .sidebar a {
+            display: block;
+            color: #080404;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 1px;
+            border-radius: 1px;
+        }
+        .sidebar a:hover {
+            background-color: #b29cb0;
+        }
+        .content {
+            margin-left: 27px;
+            padding: 20px;
+            flex: 1;
+        }
+        .name_pic{
+    float:left;
+    position: fixed;
+    padding-left: 215px;
+}
+    </style>
+</head>
+<body>
 
-    </body>
+    <div class="sidebar">
+        <h2>Sidebar hello github server!</h2>
+        <a href="{% url "index"  %}" class = "link1">Home</a>
+        <a href="mailto:elhamalsuyyan@gmail.com">Email</a>
+        <a href="https://github.com/elm1100" class = "link1" target="_blank">Github</a>
+        <a href="http://linkedin.com/in/elham-alsuyyan-77a93b27b" class = "link1" target="_blank">Linkedin</a>
+        <a href="https://drive.google.com/drive/folders/1HVF420BBczp_5r-piafiXN1WYv_G_aOQ" class = "link1" target="_blank">Certificates</a> 
+        
+        
+    </div>
 
+    <img class='name_pic' src="{% static 'name.png' %}"  width="130" height="130">
+   
+    
+</body>
 </html>
