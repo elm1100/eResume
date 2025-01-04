@@ -1,0 +1,25 @@
+.name_pic{
+    float:left;
+    position: fixed;
+    padding-left: 215px;
+}
+
+
+.cer_list_div{
+    
+    position: fixed;
+    margin:1px;
+    padding-top: 50px;
+    display: inline-block;
+    
+    
+}
+
+div{
+    display: inline;
+}
+
+a{
+    text-decoration: solid;
+    pointer-events: auto;
+}

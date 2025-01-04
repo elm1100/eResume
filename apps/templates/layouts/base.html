@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html>
+
+{% load static %} 
+
+<head>
+
+<link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- include css file -->
+<meta charset="UTF-8">       <!--encoding-->     <!--  to use HTML Symbols   -->
+
+<!--to user html icons   -    from the most popular package, called 'Font Awesome' Icons.-->
+
+
+</head>
+<body>
+ 
+   {% include "includes/sidebar.html" %}
+   {% block content %}
+   
+   {% endblock content %}
+   <img class='name_pic' src="{% static 'name.png' %}"  width="130" height="130">
+
+   
+</body>
+
+
+</html>
