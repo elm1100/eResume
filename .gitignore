@@ -1,5 +1,0 @@
-manage.py 
-/apps/
-/eResume/
-db.sqlite3
-.gitignore
