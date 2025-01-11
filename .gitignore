@@ -2,3 +2,4 @@ manage.py
 /apps/
 /eResume/
 db.sqllite3
+.gitignore
