@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Elham Alsuyyan - Resume</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f0fb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 70%;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1,
+        h2 {
+            color: #38063b;
+            transition: color 0.3s;
+            padding-bottom: 30px;
+            text-align: center;
+            font-weight: lighter;
+
+
+        }
+
+
+        p {
+            font-size: medium;
+            font-size: large;
+            line-height: 1.9;
+        }
+
+        .section {
+            margin-bottom: 70px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #ddd;
+            text-align: center;
+            opacity: 0;
+            /* Initially hidden */
+            animation-name: slideright;
+            animation-duration: 0.5s;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+        }
+
+        ul {
+
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 13px;
+            font-size: medium;
+        }
+
+        .name {
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+
+        }
+
+        .qr-code {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .qr-code img {
+            width: 120px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333
+        }
+
+        /*contact section styles*/
+        .contact-icons {
+            display: flex;
+            gap: 30px;
+            /* Adjust gap for smaller screens */
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* Ensure icons wrap on smaller screens */
+
+        }
+
+        .contact-icons a {
+            text-decoration: none;
+            color: #555;
+            font-size: 1.5rem;
+            /* Default size */
+            transition: color 0.3s ease;
+        }
+
+        .contact-icons a:hover {
+            color: #784a84;
+        }
+
+        .contact-icons i {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: #e7e6e6;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .contact-icons i:hover {
+            background: #784a84;
+            color: #fff;
+        }
+
+        .contact-h4 {
+
+            font-size: x-large;
+            text-decoration: wavy;
+            text-transform: capitalize;
+
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 768px) {
+            .contact-icons {
+                gap: 20px;
+                /* Reduce gap for smaller screens */
+            }
+
+            .contact-icons i {
+                width: 30px;
+                /* Smaller icon size */
+                height: 30px;
+            }
+
+            .contact-icons a {
+                font-size: 1rem;
+                /* Adjust font size */
+            }
+
+        }
+
+        .cer-li:hover {
+
+            text-decoration: underline;
+            color: #0078d7;
+
+        }
+
+
+        .section.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+        @keyframes slideleft {
+            from {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes slideright {
+            from {
+                transform: translateX(100%);
+            }
+        }
+
+
+
+        .elm {
+
+            height: auto;
+            width: 170px;
+        }
+
+        .rights{
+            
+            text-align: center; 
+            padding: 10px; 
+            font-size: xx-small;
+            color: #555;
+        }
+
+
+
+
+        @media (max-width: 780px) {
+
+            h1,
+            h2 {
+
+                font-size: medium;
+
+
+            }
+
+            .elm {
+
+                height: auto;
+                width: 100px;
+            }
+
+            li{
+                font-size: x-small;
+            }
+
+            p{
+                font-size: smaller;
+            }
+            a{
+                font-size: x-small;
+            }
+
+            .rights{
+            
+                font-size: 7px;
+        }
+        }
+
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="name">
+            <img src="elm.png" alt="Profile Photo" class="elm">
+            <h1>Elham Saleh Alsuyyan</h1>
+
+        </div>
+       
+        <br>
+        <br>
+        
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Senior computer science student with a focus on AI, networks, and software development. <br>
+                Passionate about building AI-powered tools and secure systems to solve real-world challenges.</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact me</h2>
+            <div class="contact-icons">
+                <a href="mailto:elhamalsuyyan@gmail.com" class="nav-link" target="_blank">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a href="tel:966533584664" class="nav-link" target="_blank">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/elham- alsuyyan-77a93b27b" class="nav-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/elm1100" class="nav-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://wa.me/966533584664" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+            </div>
+            <br>
+            <br>
+        </div>
+
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li> - Java, C++, Python, SQL</li>
+                <li> - Django (Web Development), Flutter (Mobile Development with Dart)</li>
+                <li> - MySQL, SQLite</li>
+                <li> - Leadership, problem-solving, teamwork, adaptability</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Languages</h2>
+            <ul>
+                <li> - English</li>
+                <li> - Turkish</li>
+                <li> - Russian (Basic)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong> - SmartLab</strong> - AI-powered mobile app to simplify medical lab test results.</li>
+                <li><strong> - Afnanz website</strong> - Designed a website for a weddings and events planner (<a
+                        href="https://afnanz.site">afnanz.site</a>).</li>
+                <li><strong> - Deathtrap Game</strong> - A Java desktop application simulating a puzzle.</li>
+                <li><strong> - DT to-do list</strong> - A Java to-do list app with regular and term-based lists.</li>
+                <a href="https://drive.google.com/drive/folders/14JPEExy_rRCf-Zl8T1lQdtXjJNedi_uQ" target="_blank">
+                    <li style="color: #0078d7; ">...more</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certificates</h2>
+            <ul>
+                <li></li>
+                <a class="cer-li"
+                    href="https://drive.google.com/file/d/1-8nSfPAfL1tuMsfNr62uILzCQurOhZ_4/view?usp=drivesdk"
+                    target="_blank">
+                    <li> - Network Programming</li>
+                </a>
+                <a class="cer-li"
+                    href="https://drive.google.com/file/d/1JZC-QM-8jZpCb-vSxZpuLXf0-7ORfrbc/view?usp=drivesdk"
+                    target="_blank">
+                    <li> - Artificial Intelligence Fundamentals</li>
+                </a>
+
+                <a class="cer-li"
+                    href="https://drive.google.com/file/d/1avBjq9paNSDNFiAwFca1Fgw3WysHtx2X/view?usp=drivesdk"
+                    target="_blank">
+                    <li> - Basics of Programming in Python </li>
+                </a>
+                <a class="cer-li"
+                    href="https://drive.google.com/file/d/15N8mSLbXl4SLevLlkIWfnkXQZLei8FgM/view?usp=drivesdk"
+                    target="_blank">
+                    <li> - Application Design Using Amazon Rekognition</li>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1HVF420BBczp_5r-piafiXN1WYv_G_aOQ" target="_blank">
+                    <li style="color: #0078d7; ">...more</li>
+                </a>
+            </ul>
+
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+           
+            <a href="https://stc.com.sa/" target="_blank">Saudi Telecom Company STC, IT Intern</a>
+        </div>
+
+
+
+
+        
+    <footer  class="rights" >
+        &copy; 2025 Elham Alsuyyan. All Rights Reserved.
+    </footer>
+    
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const gridItems = document.querySelectorAll(".section");
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate"); // Add animation class
+                        observer.unobserve(entry.target); // Stop observing after animation starts
+                    }
+                });
+            }, { threshold: 0.2 }); // Trigger when 20% of the item is visible
+
+            gridItems.forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
